@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1199.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé_sans_nom_22);
+      }
+
+      .cls-2 {
+        fill: #59baa2;
+      }
+
+      .cls-3 {
+        fill: url(#Dégradé_sans_nom_22-8);
+      }
+
+      .cls-4 {
+        fill: url(#Dégradé_sans_nom_22-2);
+      }
+
+      .cls-5 {
+        fill: url(#Dégradé_sans_nom_22-7);
+      }
+
+      .cls-6 {
+        fill: url(#Dégradé_sans_nom_22-4);
+      }
+
+      .cls-7 {
+        fill: url(#Dégradé_sans_nom_22-3);
+      }
+
+      .cls-8 {
+        fill: url(#Dégradé_sans_nom_22-5);
+      }
+
+      .cls-9 {
+        fill: url(#Dégradé_sans_nom_22-6);
+      }
+
+      .cls-10 {
+        fill: #009e79;
+      }
+    </style>
+    <radialGradient id="Dégradé_sans_nom_22" data-name="Dégradé sans nom 22" cx="-348.29" cy="9001.9" fx="-348.29" fy="9001.9" r="138.19" gradientTransform="translate(9601.06 431.06) rotate(90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4272b8"/>
+      <stop offset="1" stop-color="#07b793"/>
+    </radialGradient>
+    <radialGradient id="Dégradé_sans_nom_22-2" data-name="Dégradé sans nom 22" cx="-211.24" cy="8621.83" fx="-211.24" fy="8621.83" r="125.98" xlink:href="#Dégradé_sans_nom_22"/>
+    <radialGradient id="Dégradé_sans_nom_22-3" data-name="Dégradé sans nom 22" cx="168.83" cy="8483.92" fx="168.83" fy="8483.92" r="139.4" xlink:href="#Dégradé_sans_nom_22"/>
+    <radialGradient id="Dégradé_sans_nom_22-4" data-name="Dégradé sans nom 22" cx="548.14" cy="8621.83" fx="548.14" fy="8621.83" r="126.51" xlink:href="#Dégradé_sans_nom_22"/>
+    <radialGradient id="Dégradé_sans_nom_22-5" data-name="Dégradé sans nom 22" cx="-211.24" cy="9380.28" fx="-211.24" fy="9380.28" r="125.98" xlink:href="#Dégradé_sans_nom_22"/>
+    <radialGradient id="Dégradé_sans_nom_22-6" data-name="Dégradé sans nom 22" cx="168.83" cy="9518.19" fx="168.83" fy="9518.19" r="139.4" xlink:href="#Dégradé_sans_nom_22"/>
+    <radialGradient id="Dégradé_sans_nom_22-7" data-name="Dégradé sans nom 22" cx="548.14" cy="9380.28" fx="548.14" fy="9380.28" r="126.51" xlink:href="#Dégradé_sans_nom_22"/>
+    <radialGradient id="Dégradé_sans_nom_22-8" data-name="Dégradé sans nom 22" cx="685.49" cy="9001.9" fx="685.49" fy="9001.9" r="138.19" xlink:href="#Dégradé_sans_nom_22"/>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <g>
+      <g>
+        <path class="cls-1" d="M776.2,64.65l-127.56-54.29c-32.76-13.94-69.81-13.8-102.46.39l-124.06,53.91,177.04,100.9,177.04-100.9Z"/>
+        <path class="cls-4" d="M853.25,93.85l128.26,53.51c31.45,13.12,56.48,38.1,69.65,69.53l54.04,128.9-195.69-53.2-56.26-198.75Z"/>
+        <path class="cls-7" d="M1135.78,421.02l54.06,128.44c13.53,32.14,13.54,68.38.04,100.53l-54.1,128.78-101.51-178.87,101.51-178.87Z"/>
+        <path class="cls-6" d="M1105.2,852.15l-55.94,133.05c-13.32,31.69-38.68,56.79-70.51,69.79l-125.5,51.25,53.2-199.97,198.75-54.12Z"/>
+        <path class="cls-8" d="M346.75,93.85l-128.26,53.51c-31.45,13.12-56.48,38.1-69.65,69.53l-54.04,128.9,195.69-53.2,56.26-198.75Z"/>
+        <path class="cls-9" d="M64.22,421.02l-54.06,128.44c-13.53,32.14-13.54,68.38-.04,100.53l54.1,128.78,101.51-178.87-101.51-178.87Z"/>
+        <path class="cls-5" d="M94.8,852.15l55.94,133.05c13.32,31.69,38.68,56.79,70.51,69.79l125.5,51.25-53.2-199.97-198.75-54.12Z"/>
+        <path class="cls-3" d="M776.2,1134.68l-127.56,54.29c-32.76,13.94-69.81,13.8-102.46-.39l-124.06-53.91,177.04-100.9,177.04,100.9Z"/>
+      </g>
+      <g>
+        <path class="cls-10" d="M425.19,431.94h0c45.29,0,90.4-5.52,134.35-16.44l29.41-7.3-30.16,166.55c-6.98,38.52,12.92,76.9,48.43,93.4h0s-76.7,77.31-76.7,77.31l-48.58-60.25c-57.26-71.01-78.23-164.61-56.74-253.27h0Z"/>
+        <path class="cls-2" d="M601.37,411.86l70.94,45.43c49.26,31.55,82.95,82.4,92.79,140.07l10.73,62.87-122.36,14.61-35.29-16.59c-33.4-15.7-52.06-51.9-45.48-88.21l28.67-158.18Z"/>
+        <path class="cls-10" d="M676,683.97l138.19-14.61-72.51,25.86c-14.79,5.27-31.05,4.57-45.33-1.95l-20.34-9.3Z"/>
+        <path class="cls-2" d="M722.87,716.85l57.83-20.7,3.19,28.14c2.65,23.41-3.56,46.97-17.4,66.03l-15.61,21.5h0c-17.82,0-34.78-7.6-46.64-20.9l-1.45-1.63-14.61-23.13,10.35-12.18,15.78,9.25c.57.33.36,1.19-.29,1.24l-8.06.53,14.58,14.9,16.15-11.3-15.63-47.85c-.52-1.58.29-3.29,1.83-3.9h0Z"/>
+        <path class="cls-10" d="M736.68,768.6l-33.89,20.69,1.45,1.63c11.86,13.3,28.83,20.9,46.64,20.9h0l-14.2-43.22Z"/>
+        <path class="cls-10" d="M714.01,764.47l-25.84,1.68,10.35-12.18,15.78,9.25c.57.33.36,1.2-.29,1.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
