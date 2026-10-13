@@ -19,9 +19,9 @@ const itemVariants = {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-32 sm:pt-20 sm:pb-28">
       {/* Subtle radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-gradient-radial from-white/[0.03] to-transparent rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-gradient-radial from-accent-dim to-transparent rounded-full blur-3xl pointer-events-none" />
 
       <motion.div
         variants={containerVariants}
@@ -33,11 +33,11 @@ export default function Hero() {
         <motion.div variants={itemVariants} className="flex justify-center mb-10">
           <div className="relative">
             {/* Soft shadow behind photo */}
-            <div className="absolute inset-4 rounded-full bg-white/[0.06] blur-2xl" />
+            <div className="absolute inset-4 rounded-full bg-accent-dim blur-2xl" />
             <img
               src="/pp-nobg.png"
               alt="Theo Mosis"
-              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover object-top border border-white/[0.08]"
+              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover object-top border border-glass-border"
             />
           </div>
         </motion.div>
@@ -50,7 +50,7 @@ export default function Hero() {
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
             </span>
             <span className="text-text-muted">
-              Fondateur de <span className="text-text font-semibold">Tribal Enterprises</span>
+              Fondateur de <span className="text-text font-semibold">Tribal Studio LLC</span>
             </span>
           </div>
         </motion.div>
@@ -73,7 +73,7 @@ export default function Hero() {
           variants={itemVariants}
           className="mt-6 text-xl sm:text-2xl md:text-3xl font-display font-medium text-text-muted tracking-wide"
         >
-          Le <span className="text-text">Vibe Coder</span> Africain
+          Le <span className="text-text">Vibe Coder</span>
         </motion.p>
 
         {/* Description */}
@@ -81,9 +81,19 @@ export default function Hero() {
           variants={itemVariants}
           className="mt-6 text-base sm:text-lg text-text-dim max-w-2xl mx-auto leading-relaxed"
         >
-          Entrepreneur tech, développeur autodidacte &amp; créateur de contenu.
+          Je construis des marques, des produits et les outils qui les font grandir.
           <br className="hidden sm:block" />
-          Je construis mes propres outils. Je ne dépends de personne.
+          Tribal Print, My Neon Studio et Tribal Studio. Depuis Abidjan, avec l’IA.
+        </motion.p>
+
+        {/* Tagline secondary */}
+        <motion.p
+          variants={itemVariants}
+          className="mt-4 text-sm sm:text-base font-display font-semibold tracking-widest uppercase"
+        >
+          <span className="text-text-muted">Build in Africa</span>
+          <span className="text-text-dim mx-3">·</span>
+          <span className="gradient-text">Ship Worldwide</span>
         </motion.p>
 
         {/* CTA Buttons */}
@@ -92,14 +102,16 @@ export default function Hero() {
             href="#about"
             className="group relative px-8 py-4 rounded-xl font-semibold text-void bg-text overflow-hidden transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            <span className="relative z-10">Découvrir Mon Histoire</span>
-            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+            <span className="relative z-10">Découvrir mon histoire</span>
+            <div className="absolute inset-0 bg-accent-dim translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </a>
           <a
-            href="#social"
-            className="px-8 py-4 rounded-xl font-semibold glass text-text-muted hover:text-text hover:bg-white/[0.05] transition-all hover:scale-[1.02] active:scale-[0.98]"
+            href="https://tribalstudio.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 rounded-xl font-semibold glass text-text-muted hover:text-text hover:bg-glass-hover transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            YouTube &amp; Réseaux
+            Travailler avec moi →
           </a>
         </motion.div>
 
@@ -109,13 +121,13 @@ export default function Hero() {
           className="mt-16 flex flex-wrap justify-center gap-8 sm:gap-12"
         >
           {[
-            { value: '6+', label: 'Entreprises' },
-            { value: '74', label: 'Outils IA' },
-            { value: '∞', label: 'Ambition' },
+            { value: '3', label: 'Piliers' },
+            { value: 'LLC 🇺🇸', label: 'New Mexico' },
+            { value: '7+', label: 'Apps en prod' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl sm:text-4xl font-display font-bold text-text">{stat.value}</div>
-              <div className="text-sm text-text-dim mt-1 uppercase tracking-widest">{stat.label}</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-text whitespace-nowrap">{stat.value}</div>
+              <div className="text-xs sm:text-sm text-text-dim mt-1 uppercase tracking-widest">{stat.label}</div>
             </div>
           ))}
         </motion.div>
@@ -126,7 +138,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 scroll-indicator"
+        className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2 scroll-indicator pointer-events-none"
       >
         <span className="text-xs text-text-dim uppercase tracking-[0.2em]">Scroll</span>
         <svg width="20" height="28" viewBox="0 0 20 28" fill="none" className="text-text-dim">

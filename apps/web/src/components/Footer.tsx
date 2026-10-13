@@ -11,39 +11,39 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Logo & tagline */}
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-lg overflow-hidden bg-gradient-to-br from-cyan/10 to-purple/10 p-1.5">
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-accent-dim p-1.5">
                 <img
                   src="/logo.png"
                   alt="Mosis"
-                  className="w-full h-full object-contain invert brightness-200 opacity-80"
+                  className="w-full h-full object-contain logo-adaptive"
                 />
               </div>
               <div>
                 <img
                   src="/logomarque.png"
                   alt="MOSIS"
-                  className="h-5 object-contain invert brightness-200 opacity-80"
+                  className="h-5 object-contain logo-adaptive"
                 />
-                <div className="text-text-dim text-xs mt-0.5">Le Vibe Coder Africain</div>
+                <div className="text-text-dim text-xs mt-0.5">Le Vibe Coder</div>
               </div>
             </div>
 
             {/* Quote */}
             <p className="text-text-dim text-sm text-center md:text-right italic max-w-sm">
-              &laquo; Build. Ship. Repeat. Depuis Abidjan pour le monde. &raquo;
+              &laquo; Build. Ship. Repeat. &raquo;
             </p>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="mt-12 pt-8 border-t border-glass-border flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-text-dim text-sm">
               &copy; {year} Theo Mosis &mdash;{' '}
               <a
-                href="https://tribal.enterprises/"
+                href="https://tribalstudio.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-dim hover:text-white transition-colors"
+                className="text-text-dim hover:text-text transition-colors"
               >
-                Tribal Enterprise SARL
+                Tribal Studio LLC
               </a>
               . Tous droits r&eacute;serv&eacute;s.
             </p>

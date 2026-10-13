@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
 
 const sectionLinks = [
   { label: 'Accueil', href: '/#hero' },
@@ -59,7 +60,7 @@ export default function Navbar() {
             <img
               src="/logomarque.png"
               alt="MOSIS"
-              className="h-6 object-contain invert brightness-200 opacity-80 group-hover:opacity-100 transition-opacity"
+              className="h-6 object-contain logo-adaptive group-hover:opacity-100"
             />
           </Link>
 
@@ -70,24 +71,25 @@ export default function Navbar() {
                 key={link.href}
                 label={link.label}
                 href={link.href}
-                className="px-4 py-2 text-sm text-text-muted hover:text-text transition-colors rounded-lg hover:bg-white/[0.03] font-medium"
+                className="px-4 py-2 text-sm text-text-muted hover:text-text transition-colors rounded-lg hover:bg-glass-hover font-medium"
               />
             ))}
             {pageLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className="px-4 py-2 text-sm text-text-muted hover:text-text transition-colors rounded-lg hover:bg-white/[0.03] font-medium"
+                className="px-4 py-2 text-sm text-text-muted hover:text-text transition-colors rounded-lg hover:bg-glass-hover font-medium"
               >
                 {link.label}
               </Link>
             ))}
             <a
               href="/#social"
-              className="ml-3 px-5 py-2 text-sm font-semibold rounded-lg bg-white/[0.08] border border-white/[0.1] text-text hover:bg-white/[0.12] transition-all"
+              className="ml-3 px-5 py-2 text-sm font-semibold rounded-lg glass text-text hover:bg-glass-hover transition-all"
             >
               Me Suivre
             </a>
+            <ThemeToggle />
           </div>
 
           {/* Mobile burger */}
@@ -119,7 +121,7 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-void/90 backdrop-blur-2xl md:hidden"
+            className="fixed inset-0 z-40 bg-void/95 backdrop-blur-2xl md:hidden"
           >
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -131,7 +133,7 @@ export default function Navbar() {
               <img
                 src="/logomarque.png"
                 alt="MOSIS"
-                className="h-8 object-contain invert brightness-200 opacity-60 mb-4"
+                className="h-8 object-contain logo-adaptive mb-4"
               />
               {sectionLinks.map((link, i) => (
                 <motion.div

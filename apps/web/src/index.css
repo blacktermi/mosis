@@ -3,84 +3,170 @@
 @import "@fontsource-variable/space-grotesk";
 
 /* ═══════════════════════════════════════════
-   THEO MOSIS — LE VIBE CODER AFRICAIN
-   Dark Premium Monochrome Theme
+   THEO MOSIS — LE VIBE CODER
+   Dual Theme: Light & Dark
    ═══════════════════════════════════════════ */
 
 @theme {
-  --color-void: #08080c;
-  --color-abyss: #0c0c12;
-  --color-obsidian: #111118;
-  --color-slate-dark: #16161f;
-  --color-glass: rgba(255, 255, 255, 0.03);
-  --color-glass-border: rgba(255, 255, 255, 0.06);
-  --color-glass-hover: rgba(255, 255, 255, 0.06);
-  --color-accent: #c0c0cc;
-  --color-accent-dim: rgba(192, 192, 204, 0.12);
-  --color-silver: #a0a0b4;
-  --color-silver-dim: rgba(160, 160, 180, 0.1);
-  --color-warm: #d4a574;
-  --color-warm-dim: rgba(212, 165, 116, 0.1);
-  --color-text: #e8e8f0;
-  --color-text-muted: #808098;
-  --color-text-dim: #505068;
   --font-display: "Space Grotesk Variable", "Space Grotesk", system-ui, sans-serif;
   --font-body: "Outfit Variable", "Outfit", system-ui, sans-serif;
+  --color-void: var(--t-void);
+  --color-abyss: var(--t-abyss);
+  --color-obsidian: var(--t-obsidian);
+  --color-slate-dark: var(--t-slate-dark);
+  --color-glass: var(--t-glass);
+  --color-glass-border: var(--t-glass-border);
+  --color-glass-hover: var(--t-glass-hover);
+  --color-accent: var(--t-accent);
+  --color-accent-dim: var(--t-accent-dim);
+  --color-silver: var(--t-silver);
+  --color-silver-dim: var(--t-silver-dim);
+  --color-warm: var(--t-warm);
+  --color-warm-dim: var(--t-warm-dim);
+  --color-text: var(--t-text);
+  --color-text-muted: var(--t-text-muted);
+  --color-text-dim: var(--t-text-dim);
+}
+
+/* ── Light Mode (default) ── */
+:root {
+  --t-void: #f5f5f8;
+  --t-abyss: #ededf2;
+  --t-obsidian: #e4e4ec;
+  --t-slate-dark: #d8d8e4;
+  --t-glass: rgba(0, 0, 0, 0.03);
+  --t-glass-border: rgba(0, 0, 0, 0.07);
+  --t-glass-hover: rgba(0, 0, 0, 0.06);
+  --t-accent: #3a3a50;
+  --t-accent-dim: rgba(58, 58, 80, 0.1);
+  --t-silver: #5a5a72;
+  --t-silver-dim: rgba(90, 90, 114, 0.08);
+  --t-warm: #b08040;
+  --t-warm-dim: rgba(176, 128, 64, 0.08);
+  --t-text: #1a1a2e;
+  --t-text-muted: #5a5a72;
+  --t-text-dim: #8a8aa0;
+
+  --orb-opacity: 0.15;
+  --grid-opacity: 0.025;
+  --noise-opacity: 0.015;
+  --selection-bg: rgba(0, 0, 0, 0.1);
+  --selection-color: #1a1a2e;
+  --scrollbar-track: #f5f5f8;
+  --scrollbar-thumb: rgba(0, 0, 0, 0.12);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.2);
+  --gradient-start: #1a1a2e;
+  --gradient-end: #5a5a72;
+  --glow-line-color: var(--t-accent);
+  --glass-strong-bg: rgba(0, 0, 0, 0.04);
+  --glass-strong-border: rgba(0, 0, 0, 0.08);
+  --glass-top-line: rgba(0, 0, 0, 0.08);
+  --invert-logo: 0;
+}
+
+/* ── Dark Mode ── */
+.dark {
+  --t-void: #08080c;
+  --t-abyss: #0c0c12;
+  --t-obsidian: #111118;
+  --t-slate-dark: #16161f;
+  --t-glass: rgba(255, 255, 255, 0.03);
+  --t-glass-border: rgba(255, 255, 255, 0.06);
+  --t-glass-hover: rgba(255, 255, 255, 0.06);
+  --t-accent: #c0c0cc;
+  --t-accent-dim: rgba(192, 192, 204, 0.12);
+  --t-silver: #a0a0b4;
+  --t-silver-dim: rgba(160, 160, 180, 0.1);
+  --t-warm: #d4a574;
+  --t-warm-dim: rgba(212, 165, 116, 0.1);
+  --t-text: #e8e8f0;
+  --t-text-muted: #808098;
+  --t-text-dim: #505068;
+
+  --orb-opacity: 0.3;
+  --grid-opacity: 0.012;
+  --noise-opacity: 0.03;
+  --selection-bg: rgba(255, 255, 255, 0.15);
+  --selection-color: #fff;
+  --scrollbar-track: #08080c;
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.2);
+  --gradient-start: #ffffff;
+  --gradient-end: #a0a0b4;
+  --glow-line-color: var(--t-accent);
+  --glass-strong-bg: rgba(255, 255, 255, 0.05);
+  --glass-strong-border: rgba(255, 255, 255, 0.08);
+  --glass-top-line: rgba(255, 255, 255, 0.2);
+  --invert-logo: 1;
 }
 
 /* ── Base ── */
 html {
   scroll-behavior: smooth;
-  background: var(--color-void);
+  background: var(--t-void);
   overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text);
-  background: var(--color-void);
+  color: var(--t-text);
+  background: var(--t-void);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: var(--selection-bg);
+  color: var(--selection-color);
 }
 
 /* ── Glassmorphism ── */
 .glass {
-  background: var(--color-glass);
-  border: 1px solid var(--color-glass-border);
+  background: var(--t-glass);
+  border: 1px solid var(--t-glass-border);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--glass-strong-bg);
+  border: 1px solid var(--glass-strong-border);
   backdrop-filter: blur(40px) saturate(1.4);
   -webkit-backdrop-filter: blur(40px) saturate(1.4);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .glass:hover {
-  background: var(--color-glass-hover);
-  border-color: rgba(255, 255, 255, 0.1);
+  background: var(--t-glass-hover);
+  border-color: var(--glass-strong-border);
 }
 
 /* ── Gradient Text ── */
 .gradient-text {
-  background: linear-gradient(135deg, #ffffff, var(--color-silver));
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-warm {
-  background: linear-gradient(135deg, var(--color-warm), #c08050);
+  background: linear-gradient(135deg, var(--t-warm), #c08050);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ── Logo invert for dark mode ── */
+.logo-adaptive {
+  filter: invert(var(--invert-logo)) brightness(calc(1 + var(--invert-logo)));
+  opacity: 0.8;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-adaptive:hover {
+  opacity: 1;
 }
 
 /* ── Animated Background Orbs ── */
@@ -88,16 +174,17 @@ body {
   position: fixed;
   border-radius: 50%;
   filter: blur(100px);
-  opacity: 0.3;
+  opacity: var(--orb-opacity);
   pointer-events: none;
   z-index: 0;
   will-change: transform;
+  transition: opacity 0.5s ease;
 }
 
 .orb-1 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, var(--color-accent-dim), transparent 70%);
+  background: radial-gradient(circle, var(--t-accent-dim), transparent 70%);
   top: -10%;
   left: -5%;
   animation: orbit1 25s ease-in-out infinite;
@@ -106,7 +193,7 @@ body {
 .orb-2 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, var(--color-silver-dim), transparent 70%);
+  background: radial-gradient(circle, var(--t-silver-dim), transparent 70%);
   top: 40%;
   right: -10%;
   animation: orbit2 30s ease-in-out infinite;
@@ -115,7 +202,7 @@ body {
 .orb-3 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, var(--color-warm-dim), transparent 70%);
+  background: radial-gradient(circle, var(--t-warm-dim), transparent 70%);
   bottom: -5%;
   left: 30%;
   animation: orbit3 20s ease-in-out infinite;
@@ -124,7 +211,7 @@ body {
 .orb-4 {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.04), transparent 70%);
+  background: radial-gradient(circle, var(--t-accent-dim), transparent 70%);
   top: 60%;
   left: -5%;
   animation: orbit4 35s ease-in-out infinite;
@@ -160,13 +247,15 @@ body {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+    linear-gradient(var(--t-glass-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--t-glass-border) 1px, transparent 1px);
   background-size: 80px 80px;
   pointer-events: none;
   z-index: 0;
+  opacity: var(--grid-opacity);
   mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 20%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 20%, transparent 100%);
+  transition: opacity 0.5s ease;
 }
 
 /* ── Noise Texture ── */
@@ -175,16 +264,17 @@ body {
   inset: 0;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.03;
+  opacity: var(--noise-opacity);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
+  transition: opacity 0.5s ease;
 }
 
 /* ── Glow Effects ── */
 .glow-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  background: linear-gradient(90deg, transparent, var(--glow-line-color), transparent);
   opacity: 0.3;
 }
 
@@ -192,14 +282,14 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-accent);
-  box-shadow: 0 0 15px var(--color-accent-dim);
+  background: var(--t-accent);
+  box-shadow: 0 0 15px var(--t-accent-dim);
 }
 
 /* ── Section Divider ── */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-glass-border), transparent);
+  background: linear-gradient(90deg, transparent, var(--t-glass-border), transparent);
 }
 
 /* ── Scroll indicator ── */
@@ -214,8 +304,8 @@ body {
 
 /* ── Pulse glow ── */
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.04); }
-  50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.08); }
+  0%, 100% { box-shadow: 0 0 20px var(--t-accent-dim); }
+  50% { box-shadow: 0 0 40px var(--t-accent-dim); }
 }
 
 .pulse-glow {
@@ -228,14 +318,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-void);
+  background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--scrollbar-thumb);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--scrollbar-thumb-hover);
 }

@@ -5,31 +5,31 @@ import SectionReveal from './SectionReveal'
 const principles = [
   {
     number: '01',
-    title: 'Souverainet\u00e9 Technologique',
+    title: 'Pragmatisme Radical',
     description:
-      'Je refuse de d\u00e9pendre d\'abonnements et de services tiers. Chaque outil que j\'utilise dans mon business, je le code moi-m\u00eame. Mon stack, mes r\u00e8gles.',
-    accent: 'from-white/40 to-white/10',
+      'Ce qui marche, pas ce qui sonne bien. Aucun buzzword chasing, aucune posture. Je livre des produits qui tournent en prod, je facture en USD, et je documente les chiffres r\u00e9els.',
+    accent: 'from-accent/30 to-accent/5',
   },
   {
     number: '02',
-    title: 'Build From Zero',
+    title: 'Pipeline Acc\u00e9l\u00e9r\u00e9 par IA',
     description:
-      'Pas de CMS. Pas de no-code. Pas de raccourcis. React, TypeScript, Node.js \u2014 du code brut, des solutions sur mesure. Chaque fonctionnalit\u00e9 est taill\u00e9e pour mon \u00e9cosyst\u00e8me.',
-    accent: 'from-silver/40 to-silver/10',
+      'Claude Code \u00e9crit ~80 % de mon code. Cursor, Codex, MCP compl\u00e8tent. Je livre en semaines ce qu\'une agence facture en mois \u2014 sans compromis sur la qualit\u00e9.',
+    accent: 'from-silver/30 to-silver/5',
   },
   {
     number: '03',
-    title: 'L\'Afrique qui Code',
+    title: 'Build in Africa, Ship Worldwide',
     description:
-      'Je prouve chaque jour qu\'on peut construire des empires technologiques depuis l\'Afrique. Pas besoin de la Silicon Valley. Abidjan est ma base, le monde est mon march\u00e9.',
-    accent: 'from-warm/40 to-warm/10',
+      'LLC US au Nouveau-Mexique. Clients en Am\u00e9rique du Nord et en Europe. Op\u00e9r\u00e9 depuis Abidjan, bient\u00f4t depuis Kuala Lumpur. Le territoire ne d\u00e9cide pas du plafond.',
+    accent: 'from-warm/30 to-warm/5',
   },
   {
     number: '04',
-    title: 'Hustle & Build',
+    title: 'Build in Public',
     description:
-      'Pendant que certains consomment, je construis. Chaque journ\u00e9e est une opportunit\u00e9 de b\u00e2tir quelque chose de nouveau. Le mindset du builder ne dort jamais.',
-    accent: 'from-white/30 to-silver/10',
+      'Je documente tout : les contrats sign\u00e9s, les revenus, les outils \u00e9cart\u00e9s, les erreurs. Si je peux pas le dire en public, je le fais pas. Transparence avant prestige.',
+    accent: 'from-accent/20 to-silver/5',
   },
 ]
 
@@ -113,9 +113,9 @@ export default function Mindset() {
                 <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
               </svg>
               <p className="font-display text-2xl sm:text-3xl font-bold leading-snug relative z-10">
-                L'ind&eacute;pendance n'est pas un luxe.
+                L'IA n'a pas remplac&eacute; les devs.
                 <br />
-                <span className="gradient-text">C'est une n&eacute;cessit&eacute;.</span>
+                <span className="gradient-text">Elle a remplac&eacute; les agences lentes.</span>
               </p>
               <div className="mt-6 text-text-dim text-sm uppercase tracking-[0.2em]">
                 &mdash; Theo Mosis
